@@ -17,20 +17,22 @@
             
           body {
             font-family: "facitweb",sans-serif;
-            background: url("assets/images/narrow.jpg") no-repeat cover center center;
             width: 100vw;
             height: 100vh;
-
-            @media screen and (orientation: landscape) {
-                background: url("assets/images/wide.jpg") no-repeat cover center center;
-            }
-            
+            background: url("assets/images/narrow.jpg") no-repeat cover center center;            
           }
             
           h1 {
             font-weight: bold;
             font-style: italic;
           }
+
+          @media screen and (orientation: landscape) {
+              body {
+                  background: url("assets/images/wide.jpg") no-repeat cover center center;
+              }
+          }
+          
         </style>
     </head>
     <body>
