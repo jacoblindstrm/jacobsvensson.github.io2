@@ -39,8 +39,8 @@
           header h1 {
             font-weight: bold;
             font-style: italic;
-            font-size: 15vw;
-            text-align: center;
+            font-size: 10vw;
+            text-align: left;
             margin-bottom: 0;
             color: white;
           }
@@ -48,19 +48,11 @@
           header p {
               color: var(--green);
               font-style: italic;
-              font-size: 1.3rem;
-          }
-
-          @media (min-width: 700px) {
-              header p {
-                  max-width: 390px;
-                  margin-right: 50%;
-                  margin-left: auto;
-              }
           }
 
           p {
               font-size: 1rem;
+              width: 90%;
               max-width: var(--maxWidth);
           }
 
@@ -80,8 +72,31 @@
 
           }
 
-          @media screen and (orientation: landscape) {
+          @media (min-width: 700px) {
 
+              header h1 {
+                font-size: 15vw;
+                text-align: center;
+              }
+
+              header p {
+                  font-size: 1.3rem;
+                  max-width: 390px;
+                  margin-right: 50%;
+                  margin-left: auto;
+              }
+          }
+
+          @media screen and (orientation: portrait) {
+              header {
+                  position: absolute;
+                  bottom: 10vh;
+              }
+
+              svg.bg-illustration {
+                  height: 100vh;
+                  transform: rotate(180deg);
+              }
           }
 
         </style>
