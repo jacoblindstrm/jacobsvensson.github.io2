@@ -13,6 +13,14 @@
         <!-- Place favicon.ico in the root directory -->
 
         <style>
+
+        :root {
+            --pink: rgb(231, 75, 169);
+            --green: rgb(222, 154 , 100);
+            --dark: rgb(38, 38, 38);
+            --maxWidth: 650px;
+        }
+
           html, body {
               width: 100vw;
               height: 100vh;
@@ -22,6 +30,7 @@
 
           body {
             font-family: "facitweb",sans-serif;
+            background: var(--dark) url('assets/images/bg--elevation.svg') no-repeat;
             background-size: cover;
             color: black;
             padding: 0 2rem;
@@ -37,11 +46,11 @@
 
           p {
               font-size: 1rem;
-              max-width: 650px;
+              max-width: var(--maxWidth);
           }
 
           a, a:visited {
-              color: rgb(231, 75, 169);
+              color: var(--pink);
           }
 
           .introduction {
@@ -67,20 +76,21 @@
         <!-- <canvas id="introduction"></canvas> -->
         <header class="introduction">
             <h1>Hi, i'm Jacob.</h1>
-            <p>I’m an interaction designer that loves his family and like to go on long bicycle rides.</p>
-            <p><a href="#bio" title="learn more about me">Learn more</a></p>
+            <p>A Malmö based designer. I believe in design through iterative processes with users and prototypes.</p>
         </header>
 
         <style>
             @import url("https://use.typekit.net/hhb3mgk.css");
         </style>
-        <link rel="stylesheet" href="assets/styles/main.css">
+
+        <!-- <link rel="stylesheet" href="assets/styles/main.css">
         <section id="bio" class="bio">
             <h1>About me</h1>
             <p>I live in Malmö with my girlfriend, our son and our cat. Family and friends are the most important thing to me. I enjoy the outdoors and like to go on long bicycle rides through Skåne.</p>
 
-            <h2>At work</h2>
             <p>I believe in design through iterative processes with users and prototypes. School taught me what design really is. It’s primarily not how things look, but how they work and invites to engagement and interaction. I like to conduct design research and various kind of prototyping - the fundamental basics of design. I got experience working with both digital, and physical interfaces and explore how we interact with them and what happens between the interactions.</p>
+
+            <div class="divider">~&nbsp;~&nbsp;~</div>
             <p>I’ve been working for Hoodin the last four years with a wide variation of tasks. In the process of growing from a fast paced start up to a small company I believe that I’ve brought a better understanding of design and design thinking to our team. Except being responsible for most of the design work I’ve also been working with front end development.</p>
             <p>I’m now product manager of our main product, the Content Curator. This role requires me to switch from a holistic view to a functional level view, which suits me as a designer quite well. An important part of my daily work is also to understand and research what our customers struggles with.</p>
 
@@ -132,6 +142,6 @@
                     <a href="https://github.com/jacobsvensson" target="_blank" title="My Github account">Github</a>
                 </li>
             </ul>
-        </footer>
+        </footer> -->
     </body>
 </html>

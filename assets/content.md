@@ -12,12 +12,20 @@ The purpose of Trails of South Sweden is to support hikers and cyclists with the
 
 
 ## 
-I live in Malmö with my girlfriend, our son and our cat. Family and friends are the most important thing to me. 
+
+My name is Jacob. I try to make complex things easy. I live in Malmö with my girlfriend, our son, and our cat. (Our bikes are almost considered family too.) I’m 29 years old. 
+
+
+positive, passionate….
+
+Family and friends are the most important thing to me. 
 
 I enjoy the outdoors and like to go on long bicycle rides through Skåne.
 
-## At work
+
 I believe in design through iterative processes with users and prototypes. School taught me what design really is. It’s primarily not how things look, but how they work and invites to engagement and interaction. I like to conduct design research and various kind of prototyping - the fundamental basics of design. I got experience working with both digital, and physical interfaces and explore how we interact with them and what happens between the interactions.
+
+																* * * 
 
 I’ve been working for Hoodin the last four years with a wide variation of tasks. In the process of growing from a fast paced start up to a small company I believe that I’ve brought a better understanding of design and design thinking to our team. Except being responsible for most of the design work I’ve also been working with front end development. 
 
