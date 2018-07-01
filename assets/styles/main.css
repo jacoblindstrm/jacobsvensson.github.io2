@@ -2,10 +2,14 @@ section {
     margin-bottom: 30vh;
 }
 
-.divider {
+footer {
+    height: 95vh;
     text-align: center;
-    color: rgb(211,211,211);
-    max-width: var(--maxWidth);
-    font-size: 2.3rem;
-    pointer-events: none;
+    line-height: 95vh;
+    background: var(--pink);
+}
+
+footer a,
+footer a:hover {
+    color: white;
 }
