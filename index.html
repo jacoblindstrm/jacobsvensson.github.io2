@@ -33,16 +33,11 @@
             box-sizing: border-box;
           }
 
-          header {
-              padding: 0 2rem;
-          }
-
           @supports(padding: max(0px)) {
-              @media sreen and (orientation: portrait) {
-                  header {
-                      padding-left: max(70px, env(safe-area-inset-left));
-                      padding-right: max(70px, env(safe-area-inset-right));
-                  }
+              // iPHONE X
+              body {
+                  padding-left: max(2rem, env(safe-area-inset-left));
+                  padding-right: max(2rem, env(safe-area-inset-right));
               }
           }
 
