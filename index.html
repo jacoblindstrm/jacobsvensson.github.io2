@@ -31,14 +31,17 @@
             background: var(--dark);
             color: black;
             box-sizing: border-box;
-            padding-left: env(safe-area-inset-left);
-            padding-right: env(safe-area-inset-right);
-            padding-top: env(safe-area-inset-top);
-            padding-bottom: env(safe-area-inset-bottom);
           }
 
           header {
               padding: 0 2rem;
+          }
+
+          @supports(padding: max(0px)) {
+              header {
+                  padding-left: max(2rem, env(safe-area-inset-left));
+                  padding-right: max(2rem, env(safe-area-inset-right));
+              }
           }
 
           header h1 {
