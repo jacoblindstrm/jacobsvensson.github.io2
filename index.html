@@ -31,13 +31,14 @@
             background: var(--dark);
             color: black;
             box-sizing: border-box;
+            padding: 0 2rem;
           }
 
-          @supports(padding: max(0px)) {
+          @supports(padding: min(0px)) {
               // iPHONE X
               body {
-                  padding-left: max(2rem, env(safe-area-inset-left));
-                  padding-right: max(2rem, env(safe-area-inset-right));
+                  padding-left: min(2rem, env(safe-area-inset-left));
+                  padding-right: min(2rem, env(safe-area-inset-right));
               }
           }
 
