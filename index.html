@@ -38,9 +38,11 @@
           }
 
           @supports(padding: max(0px)) {
-              header {
-                  padding-left: max(70px, env(safe-area-inset-left));
-                  padding-right: max(70px, env(safe-area-inset-right));
+              @media sreen and (orientation: portrait) {
+                  header {
+                      padding-left: max(70px, env(safe-area-inset-left));
+                      padding-right: max(70px, env(safe-area-inset-right));
+                  }
               }
           }
 
