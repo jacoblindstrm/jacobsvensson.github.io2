@@ -31,15 +31,16 @@
             background: var(--dark);
             color: black;
             box-sizing: border-box;
-            padding: 0 2rem;
           }
 
-          @supports(padding: min(0px)) {
-              // iPHONE X
-              body {
-                  padding-left: min(2rem, env(safe-area-inset-left));
-                  padding-right: min(2rem, env(safe-area-inset-right));
-              }
+          // iPHONE X
+          body {
+              padding-left: env(safe-area-inset-left);
+              padding-right: env(safe-area-inset-right);
+          }
+
+          header {
+              padding: 0 2rem;
           }
 
           header h1 {
