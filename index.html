@@ -18,7 +18,7 @@
             --light: #FDF2F2;
             --coral: #F08080;
             --dark: #301919;
-            --maxWidth: 650px;
+            --maxWidth: 550px;
 
             --line-height: 1.45;
         }
@@ -31,9 +31,9 @@
         }
 
         * {
-            line-height: 1.45rem;
+            line-height: var(--line-height);
             margin-top: 0;
-            margin-bottom: 1.45rem;
+            margin-bottom: var(--line-height);
         }
 
         html, body {
@@ -63,6 +63,7 @@
             font-size: 1rem;
             font-weight: 400;
             width: 90%;
+            line-height: var(--line-height);
             max-width: var(--maxWidth);
         }
 
