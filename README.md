@@ -1,2 +1,6 @@
 # jacobsvensson.com
-Personal webpage
+
+Jacob Svensson
+www: https://jacobsvensson.com/
+Twitter: @recidiv
+Location: Malmö, Sweden
