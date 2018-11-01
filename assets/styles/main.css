@@ -1,26 +1,6 @@
-section {
-    margin-bottom: 30vh;
+::selection {
+  background: var(--coral); /* WebKit/Blink Browsers */
 }
-
-footer {
-    height: 5rem;
-    line-height: 5rem;
-    padding: 0 2rem;
-    background: var(--pink);
-}
-
-footer:before {
-    pointer-events: none;
-    content: '';
-    box-shadow: -5px 0 8px rgba(0, 0, 0, 0.85);
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 5rem;
-    z-index: -2;
-}
-
-footer a,
-footer a:hover {
-    color: white;
+::-moz-selection {
+  background: var(--coral); /* Gecko Browsers */
 }
