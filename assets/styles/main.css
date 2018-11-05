@@ -4,3 +4,20 @@
 ::-moz-selection {
   background: var(--coral); /* Gecko Browsers */
 }
+
+a,
+a:visited {
+    color: var(--coral);
+}
+
+body {
+    font-feature-settings: "liga" 1;
+    font-feature-settings: "liga1" on;
+}
+
+@supports(padding: max(0px)) {
+    body {
+        padding-left: max(70px, env(safe-area-inset-left));
+        padding-right: max(70px, env(safe-area-inset-right));
+    }
+}

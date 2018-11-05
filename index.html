@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="">
+<html lang="en-EU" itemscope itemtype="http://schema.org/WebPage">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -31,107 +31,93 @@
         <!-- Place favicon.ico in the root directory -->
 
         <style>
-
-        :root {
-            --light: hsl(0, 73%, 97%);
-            --coral: hsl(0, 79%, 72%);
-            --dark: hsl(0, 32%, 14%);
-            --maxWidth: 550px;
-
-            --line-height: 1.45;
-        }
-
-        @media (prefers-color-scheme: dark) {
             :root {
-                --dark: hsl(0, 73%, 97%);
-                --light: hsl(0, 32%, 14%);
+                --light: hsl(0, 73%, 97%);
+                --coral: hsl(0, 79%, 72%);
+                --dark: hsl(0, 32%, 14%);
+                --maxWidth: 550px;
+        
+                --line-height: 1.45;
             }
-        }
-
-        * {
-            line-height: var(--line-height);
-            margin-top: 0;
-            margin-bottom: var(--line-height);
-        }
-
-        html, body {
-            font-size: 112.5%; 
-        }
-
-        body {
-            font-family: "jaf-facitweb","facitweb", helvetica, sans-serif;
-            background: var(--light);
-            color: var(--dark);
-            box-sizing: border-box;
-            padding: 0 2rem;
-            kerning: auto;
-            font-feature-settings: "liga" 1;
-            font-feature-settings: "liga1" on;
-        }
-
-        @supports(padding: max(0px)) {
-            // iPHONE X
+        
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --dark: hsl(0, 73%, 97%);
+                    --light: hsl(0, 32%, 14%);
+                }
+            }
+        
+            * {
+                line-height: var(--line-height);
+                margin-top: 0;
+                margin-bottom: var(--line-height);
+            }
+        
+            html,
             body {
-                padding-left: max(70px, env(safe-area-inset-left));
-                padding-right: max(70px, env(safe-area-inset-right));
+                font-size: 112.5%;
             }
-        }
-
-        p {
-            font-size: 1rem;
-            font-weight: 400;
-            width: 90%;
-            line-height: var(--line-height);
-            max-width: var(--maxWidth);
-        }
-
-        a, a:visited {
-            color: var(--coral);
-        }
-
-        header {
-            margin-top: 45vh;
-        }
-
-        header h1 {
-            font-weight: 800;
-            font-size: 4rem;
-            letter-spacing: -0.04rem;
-            line-height: calc(var(--line-height) * 1);
-
-            margin-top: calc(var(--line-height) * 3);
-            margin-bottom: 0;
-        }
-
-        header h1::after {
-            content: ".";
-            color: var(--coral);
-        }  
-
-        header p {
-            font-weight: 700;
-        }        
-
-        @media (min-width: 700px) {
+        
+            body {
+                font-family: "jaf-facitweb", "facitweb", helvetica, sans-serif;
+                background: var(--light);
+                color: var(--dark);
+                box-sizing: border-box;
+                padding: 0 2rem;
+                kerning: auto;
+            }
+        
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                width: 90%;
+                line-height: var(--line-height);
+                max-width: var(--maxWidth);
+            }
+        
+            header {
+                margin-top: 45vh;
+            }
+        
             header h1 {
-                font-size: 6rem;
+                font-weight: 800;
+                font-size: 2rem;
+                letter-spacing: -0.04rem;
+                line-height: calc(var(--line-height) * 1);
+        
+                margin-top: calc(var(--line-height) * 3);
+                margin-bottom: 0;
             }
-
+        
+            header h1::after {
+                content: ".";
+                color: var(--coral);
+            }
+        
             header p {
-                font-size: 1.3rem;
+                font-weight: 700;
             }
-        }
-
-        @media (min-width: 820px) {
-
-            header h1 {
-                font-size: 8rem;
+        
+            @media (min-width: 700px) {
+                header h1 {
+                    font-size: 5rem;
+                }
+        
+                header p {
+                    font-size: 1.3rem;
+                }
             }
-
-            header p {
-                font-size: 1.3rem;
+        
+            @media (min-width: 820px) {
+        
+                header h1 {
+                    font-size: 8rem;
+                }
+        
+                header p {
+                    font-size: 1.3rem;
+                }
             }
-        }
         </style>
     </head>
     <body>
@@ -140,9 +126,7 @@
             <p>I'm a Malmö based designer who believe in design through iterative processes with users and&nbsp;prototypes.</p>
         </header>
 
-        <style>
-            @import url("https://use.typekit.net/hhb3mgk.css");
-        </style>
+        <link rel="stylesheet" href="https://use.typekit.net/hhb3mgk.css">
         <link rel="stylesheet" href="assets/styles/main.css">
     </body>
 </html>
