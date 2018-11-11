@@ -63,8 +63,14 @@
                 background: var(--light);
                 color: var(--dark);
                 box-sizing: border-box;
-                padding: 0 2rem;
+                padding: 0 1rem;
                 kerning: auto;
+            }
+
+            @media (min-width: 700px) {
+                body {
+                    padding: 0 2rem;
+                }
             }
         
             p {
@@ -81,7 +87,7 @@
         
             header h1 {
                 font-weight: 800;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 letter-spacing: -0.04rem;
                 line-height: calc(var(--line-height) * 1);
         
