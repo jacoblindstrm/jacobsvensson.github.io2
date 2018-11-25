@@ -1,0 +1,22 @@
+{
+  "name": "jacobsvensson_com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jacobsvensson/jacobsvensson.github.io.git",
+  "author": "Jacob Svensson <jacob@hoodin.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.26.0"
+  },
+  "dependencies": {
+    "lazysizes": "^4.1.4"
+  }
+}

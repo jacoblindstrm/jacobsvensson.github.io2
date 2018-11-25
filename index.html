@@ -56,6 +56,8 @@
             html,
             body {
                 font-size: 112.5%;
+                margin: 0;
+                padding: 0;
             }
         
             body {
@@ -65,6 +67,10 @@
                 box-sizing: border-box;
                 padding: 0 1rem;
                 kerning: auto;
+            }
+
+            section {
+                margin-bottom: 10vh;
             }
 
             @media (min-width: 700px) {
@@ -80,9 +86,27 @@
                 line-height: var(--line-height);
                 max-width: var(--maxWidth);
             }
+
+            p + p {
+                text-indent: 1rem;
+            }
+
+            @media (min-width: 768px) {
+                p + p {
+                    text-indent: 0;
+                    margin-top: 1rem;
+                }
+            }
         
             header {
                 margin-top: 45vh;
+                margin-bottom: 3rem;
+            }
+
+            @media (min-width: 768px) {
+                header {
+                    margin-bottom: 6rem;
+                }
             }
         
             header h1 {
@@ -127,12 +151,35 @@
         </style>
     </head>
     <body>
-        <header class="introduction">
-            <h1>Hi, i'm Jacob</h1>
-            <p>I'm a Malmö based designer who believe in design through iterative processes with users and&nbsp;prototypes.</p>
-        </header>
+        <section>
+            <header class="introduction">
+                <h1>Hi, i'm Jacob</h1>
+                <p>I believe in design through iterative processes with users and&nbsp;prototypes.</p>
+            </header>
+            <p>I’m a father, cyclist and, designer. I like being outdoors, I drink too much coffe, and I love spending time with my
+            family and friends. I’m 29 years old.</p>
+            
+            <p>From 2010 to 2013, I attended Malmö University and graduated with a bachelor in Interaction Design. During that time I
+            also took related classes in co-design and graphic design.</p>
+            
+            <p>Since 2013 I’ve co-funded Hoodin, which is where I currently work. Throughout the years I’ve had a prominent design
+            role at the company, but also occupied a role as front end developer. As of today my formal title is Product Manager.</p>
+            
+            <p>I’ve also been involved in smaller side projects with clients like Youcruit and Kollektiva.</p>
+            
+            <p>I live and work in Malmö.</p>
+        </section>
 
         <link rel="stylesheet" href="https://use.typekit.net/hhb3mgk.css">
         <link rel="stylesheet" href="assets/styles/main.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21886787-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-21886787-1');
+        </script>
     </body>
 </html>
