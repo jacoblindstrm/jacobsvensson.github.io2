@@ -71,6 +71,7 @@
 
             article {
                 margin-bottom: 10vh;
+                animation: show .75s ease-in-out;
             }
 
             @media (min-width: 700px) {
@@ -145,6 +146,22 @@
         
                 header p {
                     font-size: 1.3rem;
+                }
+            }
+
+            @keyframes show {
+                0% {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(200px);
+                }
+                30% {
+                    visibility: visible;
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0px);
                 }
             }
         </style>
