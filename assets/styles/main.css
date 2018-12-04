@@ -1,8 +1,9 @@
 ::selection {
-  background: var(--coral); /* WebKit/Blink Browsers */
+    background: var(--coral); /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
-  background: var(--coral); /* Gecko Browsers */
+    background: var(--coral); /* Gecko Browsers */
 }
 
 a,
