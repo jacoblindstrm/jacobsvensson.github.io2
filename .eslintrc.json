@@ -1,0 +1,42 @@
+{
+    "extends": ["airbnb-base", "prettier"],
+    "plugins": ["import", "prettier"],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "rules": {
+        "arrow-parens": ["error", "as-needed"],
+        "no-bitwise": ["error", { "allow": ["~", ">>>"] }],
+        "space-before-function-paren": ["error", "never"],
+        "eqeqeq": ["error", "smart"],
+        "no-param-reassign": ["error", { "props": false }],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+        "prettier/prettier": "error",
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "prefer-promise-reject-errors": "off",
+        "prefer-destructuring": "off"
+    },
+    "globals": {        
+        "addEventListener": true,
+        "afterEach": true,
+        "beforeEach": true,        
+        "caches": true,
+        "describe": true,
+        "document": true,
+        "DOMParser": true,
+        "Event": true,
+        "expect": true,
+        "fetch": true,
+        "Image": true,
+        "it": true,
+        "jest": true,
+        "MutationObserver": true,
+        "navigator": true,
+        "Node": true,
+        "self": true,
+        "test": true,
+        "window": true,
+        "XMLHttpRequest": true
+    }
+}

@@ -8,24 +8,6 @@
         <meta name="description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
-        <!-- Google / Search Engine Tags -->
-        <meta itemprop="name" content="hello@jacobsvensson.com">
-        <meta itemprop="description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
-        <meta itemprop="image" content="og-image.png">
-        
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://jacobsvensson.com">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="hello@jacobsvensson.com">
-        <meta property="og:description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
-        <meta property="og:image" content="og-image.png">
-        
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="hello@jacobsvensson.com">
-        <meta name="twitter:description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
-        <meta name="twitter:image" content="og-image.png">
-
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -177,54 +159,11 @@
             <article id="about">
                 <header class="introduction">
                     <h1>Hi, i'm Jacob</h1>
-                    <p>I believe in design through iterative processes with users and&nbsp;prototypes.</p>
+                    <p>Seems like you're offline! :/</p>
                 </header>
-                <p>I’m a father, cyclist and, designer. I like being outdoors, I drink too much coffe, and I love spending time with my
-                family and friends. I’m 29 years old.</p>
-                
-                <p>From 2010 to 2013, I attended Malmö University and graduated with a bachelor in Interaction Design. During that time I
-                also took related classes in co-design and graphic design.</p>
-                
-                <p>Since 2013 I’ve co-funded Hoodin, which is where I currently work. Throughout the years I’ve had a prominent design
-                role at the company, but also occupied a role as front end developer. As of today my formal title is Product Manager.</p>
-                
-                <p>I’ve also been involved in smaller side projects with Youcruit and Kollektiva.</p>
-                
-                <p>I live and work in Malmö.</p>
             </article>
         </main>
         <link rel="stylesheet" href="https://use.typekit.net/hhb3mgk.css">
-        <link rel="stylesheet" href="assets/styles/main.css">
-        <script>
-            if (navigator.serviceWorker) {
-                navigator.serviceWorker.register('/serviceworker.js');
-            }
-        </script>
-        <script>
-            window['_fs_debug'] = false;
-            window['_fs_host'] = 'fullstory.com';
-            window['_fs_org'] = 'GR3SH';
-            window['_fs_namespace'] = 'FS';
-            (function (m, n, e, t, l, o, g, y) {
-                if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
-                g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
-                o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
-                y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
-                g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
-                g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
-                g.consent = function (a) { g("consent", !arguments.length || a) };
-                g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
-                g.clearUserCookie = function () { };
-            })(window, document, window['_fs_namespace'], 'script', 'user');
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21886787-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-21886787-1');
-        </script>
+        <script async src="/dist/main.js"></script>
     </body>
 </html>
