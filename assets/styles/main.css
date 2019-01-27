@@ -6,14 +6,123 @@
     background: var(--coral); /* Gecko Browsers */
 }
 
-a,
-a:visited {
-    color: var(--coral);
-}
-
 body {
     font-feature-settings: "liga" 1;
     font-feature-settings: "liga1" on;
+}
+
+aside {
+    position: relative;
+}
+
+aside:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+    pointer-events: none;
+    background: url(/assets/images/pattern.svg) repeat -10px -4px;
+}
+
+@media (min-width: 1280px) {
+
+    article {
+        display: grid;
+        grid-template: 25vh repeat(5, min-content) 35vh / repeat(12, 1fr);
+    }
+
+    article h1 {
+        grid-column: 1 / 8;
+        grid-row: 2;
+        white-space: nowrap;
+        padding: 0;
+        margin-left: 1rem;
+    }
+
+    article h1 + p {
+        grid-column: 2 / 7;
+        grid-row: 3;
+    }
+
+    article .body {
+        grid-column: 2 / 6;
+        grid-row: 4;
+    }
+
+    article img {
+        max-width: 500px;
+        grid-column: 7 / span 5;
+        grid-row: 3 / span 2;
+        z-index: 1;
+        clear: both;
+    }
+
+    article .body,
+    article h1 + p {
+        padding: 0;
+    }
+
+    aside {
+        grid-area: 1 / 8 / last-line / end;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        padding-bottom: 15vh;
+    }
+}
+
+a,
+a:visited {
+    color: var(--coral);
+    text-decoration-style: wavy;
+}
+
+aside a,
+aside a:visited {
+    color: var(--light);
+}
+
+img {
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0.2rem;
+}
+
+ul.external-links {
+    list-style: none;
+    padding: 0;
+}
+
+ul.external-links li {
+    line-height: 2;
+}
+
+ul.external-links li::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5em; 
+}
+
+ul.external-links li.dribbble::before {
+    background-image: url('/assets/icons/dribbble.svg');
+}
+
+ul.external-links li.medium::before {
+    background-image: url('/assets/icons/medium.svg');
+}
+
+ul.external-links li.instagram::before {
+    background-image: url('/assets/icons/instagram.svg');
+}
+
+ul.external-links li.spotify::before {
+    background-image: url('/assets/icons/spotify.svg');
 }
 
 /* @supports(padding: max(0px)) {

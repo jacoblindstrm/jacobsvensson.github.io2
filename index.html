@@ -59,29 +59,80 @@
             }
 
             body {
-                font-family: "jaf-facitweb", "facitweb", helvetica, sans-serif;
-                background: var(--light);
+                font-family: "jaf-facitweb", "facitweb", -apple-system, BlinkMacSystemFont, helvetica, sans-serif;
+                font-feature-settings: normal;
+                background: var(--light) url(/assets/images/pattern.svg) repeat;
                 color: var(--dark);
                 box-sizing: border-box;
-                padding: 0 1rem;
                 kerning: auto;
             }
 
             article {
-                margin-bottom: 10vh;
+                padding: 0;
                 animation: show 0.75s ease-in-out;
+            }
+
+            article h1 {
+                padding: 20vh 1.3rem 0;
+            }
+
+            article h1 + p {
+                padding: 0 1.3rem 1.3rem;
+            }
+
+            .body {
+                padding: 1.3rem;
+            }
+
+            aside {
+                padding: 2rem 1rem;
+                animation: freeze 0.75s linear;
+            }
+
+            img {
+                max-width: 100%;
+                animation: show 0.85s ease-in-out;
             }
 
             @media (prefers-reduced-motion: reduce) {
                 article {
                     animation: none;
                 }
+
+                aside {
+                    animation: none;
+                }
+
+                img {
+                    animation: none;
+                }
             }
 
             @media (min-width: 700px) {
-                body {
-                    padding: 0 2rem;
+
+                article h1,
+                article h1 + p {
+                    padding-left: 4rem;
                 }
+
+                .body {
+                    padding: 2rem 4rem;
+                }
+
+                aside {
+                    padding: 2rem 4rem;
+                }
+
+                img {
+                    max-width: 35vw;
+                    margin: 0.5rem 4rem 0.5rem 1rem;
+                    float: right;
+                }
+            }
+
+            aside {
+                background: var(--coral);
+                color: var(--light); /* accessability conserns */
             }
 
             p {
@@ -89,6 +140,16 @@
                 font-weight: 400;
                 line-height: var(--line-height);
                 max-width: var(--maxWidth);
+            }
+
+            h1 + p {
+                font-weight: 700;
+            }
+
+            @media (min-width: 768px) {
+                h1 + p {
+                    margin-bottom: 3rem;
+                }
             }
 
             p + p {
@@ -102,18 +163,7 @@
                 }
             }
 
-            header {
-                margin-top: 45vh;
-                margin-bottom: 3rem;
-            }
-
-            @media (min-width: 768px) {
-                header {
-                    margin-bottom: 6rem;
-                }
-            }
-
-            header h1 {
+            h1 {
                 font-weight: 800;
                 font-size: 2.5rem;
                 letter-spacing: -0.04rem;
@@ -122,33 +172,25 @@
                 margin-bottom: 0;
             }
 
-            header h1::after {
+            h1::after {
                 content: ".";
                 color: var(--coral);
             }
 
-            header p {
-                font-weight: 700;
-            }
-
             @media (min-width: 700px) {
-                header h1 {
+                h1 {
                     font-size: 5rem;
                 }
         
-                header p {
+                h1 + p {
                     font-size: 1.3rem;
                 }
             }
 
             @media (min-width: 820px) {
         
-                header h1 {
+                h1 {
                     font-size: 8rem;
-                }
-        
-                header p {
-                    font-size: 1.3rem;
                 }
             }
 
@@ -169,28 +211,71 @@
                     transform: translateY(0);
                 }
             }
+
+            @keyframes show-slow {
+                0% {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(300px);
+                }
+
+                30% {
+                    visibility: visible;
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes freeze {
+                0% {
+                    transform: translateY(-200px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
         </style>
     </head>
     <body>
         <main>
-            <article id="about">
-                <header class="introduction">
-                    <h1>Hi, i'm Jacob</h1>
+            <section id="about">
+                <article>
+                    <h1>I'm Jacob</h1>
                     <p>I believe in design through iterative processes with users and&nbsp;prototypes.</p>
-                </header>
-                <p>I’m a father, cyclist and, designer. I like being outdoors, I drink too much coffe, and I love spending time with my
-                family and friends. I’m 29 years old.</p>
-                
-                <p>From 2010 to 2013, I attended Malmö University and graduated with a bachelor in Interaction Design. During that time I
-                also took related classes in co-design and graphic design.</p>
-                
-                <p>Since 2013 I’ve co-funded Hoodin, which is where I currently work. Throughout the years I’ve had a prominent design
-                role at the company, but also occupied a role as front end developer. As of today my formal title is Product Manager.</p>
-                
-                <p>I’ve also been involved in smaller side projects with Youcruit and Kollektiva.</p>
-                
-                <p>I live and work in Malmö.</p>
-            </article>
+                    
+                    <img src="/assets/images/profile.jpg" alt="me riding cx" />
+
+                    <div class="body">
+                        <p>I’m a father, cyclist and, designer. I like being outdoors, I drink too much coffe, and I love spending time with my
+                        family and friends. I’m 29 years old.</p>
+                        
+                        <p>From 2010 to 2013, I attended Malmö University and graduated with a bachelor in Interaction Design. During that time I
+                        also took related classes in co-design and graphic design.</p>
+                        
+                        <p>Since 2013 I’ve co-funded Hoodin, which is where I currently work. Throughout the years I’ve had a prominent design
+                        role at the company, but also occupied a role as front end developer. As of today my formal title is Product Manager.</p>
+                        
+                        <p>I’ve also been involved in smaller side projects with Youcruit and Kollektiva.</p>
+                        
+                        <p>I live and work in Malmö.</p>
+                    </div>
+
+                    <aside>
+                        <h2>Elsewhere on www</h2>
+                        <ul class="external-links">
+                            <li class="dribbble"><a href="https://dribbble.com/jacobsvensson" target="_blank">Dribbble</a></li>
+                            <li class="medium"><a href="https://medium.com/@recidiv" target="_blank">Medium</a></li>
+                            <li class="instagram"><a href="https://instagram.com/jacob.svnsn/" target="_blank">Instagram</a></li>
+                            <li class="spotify"><a href="https://dribbble.com/jacobsvensson" target="_blank">Spotify</a></li>
+                        </ul>
+                    </aside>
+                </article>
+            </section>
         </main>
         <link rel="stylesheet" href="https://use.typekit.net/hhb3mgk.css">
         <link rel="stylesheet" href="/assets/styles/main.css">
