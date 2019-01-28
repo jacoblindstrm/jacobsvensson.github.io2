@@ -15,7 +15,7 @@ aside {
     position: relative;
 }
 
-aside:after {
+aside::after {
     content: "";
     position: absolute;
     top: 0;
@@ -24,7 +24,7 @@ aside:after {
     right: 0;
     opacity: 0.2;
     pointer-events: none;
-    background: url(/assets/images/pattern.svg) repeat -10px -4px;
+    background: url(/assets/images/pattern.svg) repeat 2px 12px;
 }
 
 @media (min-width: 1280px) {
@@ -58,6 +58,7 @@ aside:after {
         grid-row: 3 / span 2;
         z-index: 1;
         clear: both;
+        box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
     }
 
     article .body,
@@ -72,6 +73,10 @@ aside:after {
         justify-content: flex-end;
         padding-bottom: 15vh;
     }
+
+    aside::after {
+        background: url(/assets/images/pattern.svg) repeat -10px -4px;
+    }
 }
 
 a,
@@ -83,11 +88,6 @@ a:visited {
 aside a,
 aside a:visited {
     color: var(--light);
-}
-
-img {
-    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 0.2rem;
 }
 
 ul.external-links {
