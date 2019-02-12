@@ -75,7 +75,7 @@ aside::after {
     }
 
     aside::after {
-        background: url(/assets/images/pattern.svg) repeat -6px 0 fixed;
+        background: url(/assets/images/pattern.svg) repeat fixed;
     }
 }
 
