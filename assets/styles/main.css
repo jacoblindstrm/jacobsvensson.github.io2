@@ -87,7 +87,7 @@ a:visited {
 
 aside a,
 aside a:visited {
-    color: var(--light);
+    color: var(--blue);
 }
 
 ul.external-links {
