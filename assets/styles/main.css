@@ -24,7 +24,7 @@ aside::after {
     right: 0;
     opacity: 0.2;
     pointer-events: none;
-    background: url(/assets/images/pattern.svg) repeat 2px 12px;
+    background: url(/assets/images/pattern.svg) repeat;
 }
 
 @media (min-width: 1280px) {
@@ -75,7 +75,7 @@ aside::after {
     }
 
     aside::after {
-        background: url(/assets/images/pattern.svg) repeat -10px -4px;
+        background: url(/assets/images/pattern.svg) repeat -6px 0;
     }
 }
 
