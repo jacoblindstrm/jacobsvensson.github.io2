@@ -17,14 +17,14 @@ aside {
 
 aside::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: 0.2;
     pointer-events: none;
-    background: url(/assets/images/pattern.svg) repeat;
+    background: url(/assets/images/pattern.svg) repeat fixed;
 }
 
 @media (min-width: 1280px) {
@@ -75,7 +75,7 @@ aside::after {
     }
 
     aside::after {
-        background: url(/assets/images/pattern.svg) repeat -6px 0;
+        background: url(/assets/images/pattern.svg) repeat -6px 0 fixed;
     }
 }
 
