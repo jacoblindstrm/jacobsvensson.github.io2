@@ -35,7 +35,7 @@ aside > * {
 
     article {
         display: grid;
-        grid-template: 25vh repeat(5, min-content) 35vh / repeat(12, 1fr);
+        grid-template: 25vh repeat(5, min-content) calc(250px + 15vh) / repeat(12, 1fr);
     }
 
     article h1 {
@@ -77,12 +77,16 @@ aside > * {
         display: flex;
         flex-flow: column;
         justify-content: flex-end;
-        padding-bottom: 15vh;
         margin-top: 0;
+        padding-bottom: 15vh;
     }
 
     aside::after {
         background: url(/assets/images/pattern.svg) repeat fixed;
+    }
+
+    aside h2 {
+        margin-top
     }
 }
 
@@ -114,6 +118,10 @@ ul.external-links li::before {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.5em; 
+}
+
+ul.external-links li.ixd-foundation::before {
+    background-image: url('/assets/icons/interactiondesignfoundation.svg');
 }
 
 ul.external-links li.dribbble::before {
