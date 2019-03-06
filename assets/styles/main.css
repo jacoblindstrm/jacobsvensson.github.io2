@@ -13,6 +13,7 @@ body {
 
 aside {
     position: relative;
+    margin-top: 4rem;
 }
 
 aside::after {
@@ -77,6 +78,7 @@ aside > * {
         flex-flow: column;
         justify-content: flex-end;
         padding-bottom: 15vh;
+        margin-top: 0;
     }
 
     aside::after {
