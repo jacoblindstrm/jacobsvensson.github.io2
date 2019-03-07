@@ -94,11 +94,12 @@ ul.external-links li {
 ul.external-links li::before {
     content: '';
     display: inline-block;
-    height: 1em;
-    width: 1em;
+    height: 1.1em;
+    min-width: 1.1em;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 0.5em; 
+    margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 ul.external-links li.ixd-foundation::before {
