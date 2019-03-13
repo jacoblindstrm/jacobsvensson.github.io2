@@ -70,6 +70,7 @@ aside {
 a,
 a:visited {
     color: var(--coral);
+        -webkit-text-decoration-style: wavy;
     text-decoration-style: wavy;
 }
 
