@@ -65,10 +65,6 @@ aside {
         margin-top: 0;
         padding-bottom: 15vh;
     }
-
-    aside h2 {
-        margin-top
-    }
 }
 
 a,
@@ -80,6 +76,13 @@ a:visited {
 aside a,
 aside a:visited {
     color: var(--blue);
+}
+
+@media (prefers-color-scheme: dark) {
+    aside a,
+    aside a:visited {
+        color: var(--coral);
+    }
 }
 
 ul.external-links {
@@ -120,6 +123,15 @@ ul.external-links li.instagram::before {
 
 ul.external-links li.spotify::before {
     background-image: url('/assets/icons/spotify.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+    /* color for icons */
+    ul.external-links li::before {
+            -webkit-filter: hue-rotate(130deg) saturate(0.4) brightness(3.7);
+        filter: hue-rotate(130deg) saturate(0.4) brightness(3.7);
+        
+    }
 }
 
 /* @supports(padding: max(0px)) {

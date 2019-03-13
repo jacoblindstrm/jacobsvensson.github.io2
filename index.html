@@ -4,25 +4,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>hello@jacobsvensson.com</title>
+        <title>hello@jacobsvensson.design</title>
         <meta name="description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
         <!-- Google / Search Engine Tags -->
-        <meta itemprop="name" content="hello@jacobsvensson.com">
+        <meta itemprop="name" content="hello@jacobsvensson.design">
         <meta itemprop="description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
         <meta itemprop="image" content="og-image.png">
         
         <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://jacobsvensson.com">
+        <meta property="og:url" content="https://jacobsvensson.design">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="hello@jacobsvensson.com">
+        <meta property="og:title" content="hello@jacobsvensson.design">
         <meta property="og:description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
         <meta property="og:image" content="og-image.png">
         
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="hello@jacobsvensson.com">
+        <meta name="twitter:title" content="hello@jacobsvensson.design">
         <meta name="twitter:description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
         <meta name="twitter:image" content="og-image.png">
 
@@ -41,8 +41,9 @@
 
             @media (prefers-color-scheme: dark) {
                 :root {
-                    --dark: hsl(0, 73%, 97%);
-                    --light: hsl(0, 32%, 14%);
+                    --coral: hsl(5, 99%, 71%);
+                    --blue: hsl(222, 100%, 32%);
+                    --dark: hsl(222, 100%, 2%);
                 }
             }
 
@@ -88,6 +89,19 @@
             aside {
                 padding: 2rem 1rem;
                 animation: freeze 0.75s linear;
+                background: var(--coral) url(/assets/images/pattern.svg) repeat fixed;
+                color: var(--blue);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: var(--dark) url(/assets/images/pattern_blue.svg) repeat fixed;
+                }
+
+                aside {
+                    background: var(--blue) url(/assets/images/pattern_blue.svg) repeat fixed;
+                    color: var(--light);
+                }
             }
 
             img {
@@ -95,7 +109,7 @@
                 animation: show 0.85s ease-in-out;
                 transition: all ease 0.25s;
                     -webkit-clip-path: polygon(0 0, 10% 0, 10% 4%, 20% 4%, 20% 0, 24% 0, 24% 4%, 36% 4%, 36% 0, 100% 0, 100% 80%, 95% 85%, 100% 90%, 100% 100%, 0% 100%);
-                clip-path: polygon(0 0, 10% 0, 10% 4%, 20% 4%, 20% 0, 24% 0, 24% 4%, 36% 4%, 36% 0, 100% 0, 100% 80%, 95% 85%, 100% 90%, 100% 100%, 0% 100%);            }
+                clip-path: polygon(0 0, 10% 0, 10% 4%, 20% 4%, 20% 0, 24% 0, 24% 4%, 36% 4%, 36% 0, 100% 0, 100% 80%, 95% 85%, 100% 90%, 100% 100%, 0% 100%);
             }
 
             @media (prefers-reduced-motion: reduce) {
@@ -133,11 +147,6 @@
                     margin: 0.5rem 4rem 0.5rem 1rem;
                     float: right;
                 }
-            }
-
-            aside {
-                background: var(--coral) url(/assets/images/pattern.svg) repeat fixed;
-                color: var(--blue);
             }
 
             p {
