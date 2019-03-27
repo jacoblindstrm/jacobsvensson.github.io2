@@ -141,3 +141,16 @@ ul.external-links li.spotify::before {
         padding-right: max(70px, env(safe-area-inset-right));
     }
 } */
+
+
+@media print {
+    body, aside {
+        background: transparent;
+        color: black;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 80%;
+    }
+}
