@@ -7,7 +7,14 @@ self.addEventListener('install', installEvent => {
                 '/index.html',
                 '/offline.html',
                 'https://use.typekit.net/hhb3mgk.css',
-                '/assets/styles/main.css'
+                '/assets/styles/main.css',
+                '/assets/images/pattern_blue.svg',
+                'assets/images/pattern.svg',
+                '/assets/icons/interactiondesignfoundation.svg',
+                '/assets/icons/instagram.svg',
+                '/assets/icons/medium.svg',
+                '/assets/icons/dribbble.svg',
+                '/assets/icons/spotify.svg'
             ]);
         }),
     );
