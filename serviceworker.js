@@ -3,8 +3,11 @@ self.addEventListener('install', installEvent => {
     installEvent.waitUntil(
         caches.open('jacobsvenssoncomCache').then(jacobsvenssoncomCache => {
             jacobsvenssoncomCache.addAll([
+                '.',
                 '/index.html',
-                '/offline.html'
+                '/offline.html',
+                'https://use.typekit.net/hhb3mgk.css',
+                '/assets/styles/main.css'
             ]);
         }),
     );
