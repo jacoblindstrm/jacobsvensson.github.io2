@@ -1,15 +1,15 @@
 // eslint-disable-next-line no-restricted-globals
 self.addEventListener('install', installEvent => {
     installEvent.waitUntil(
-        caches.open('jacobsvenssoncomCache').then(jacobsvenssoncomCache => {
-            jacobsvenssoncomCache.addAll([
+        caches.open('jacobsvenssondesignCache').then(jacobsvenssondesignCache => {
+            jacobsvenssondesignCache.addAll([
                 '.',
                 '/index.html',
                 '/offline.html',
                 'https://use.typekit.net/hhb3mgk.css',
                 '/assets/styles/main.css',
                 '/assets/images/pattern_blue.svg',
-                'assets/images/pattern.svg',
+                '/assets/images/pattern.svg',
                 '/assets/icons/interactiondesignfoundation.svg',
                 '/assets/icons/instagram.svg',
                 '/assets/icons/medium.svg',
