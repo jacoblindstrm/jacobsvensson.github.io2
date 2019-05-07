@@ -162,7 +162,7 @@
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 400;
                 line-height: var(--line-height);
                 max-width: var(--maxWidth);
@@ -179,10 +179,14 @@
             }
 
             p + p {
-                text-indent: 1.1rem;
+                text-indent: 1rem;
             }
 
             @media (min-width: 768px) {
+                p {
+                    font-size: 1.1rem;
+                }
+
                 p + p {
                     text-indent: 0;
                     margin-top: 1.1rem;
@@ -283,9 +287,9 @@
                         <p>From 2010 to 2013 I attended <a href="https://edu.mau.se/en/Program/TGIDE" itemprop="alumniOf" rel="noopener" target="_blank">Malmö University</a> and graduated with a bachelor in <strong>Interaction Design</strong>. During that time I
                         also took related classes in <strong>co-Design</strong> and <strong>Graphic Design</strong>.</p>
                         
-                        <p>Since 2013 I’ve co-funded <a href="https://hoodin.com" itemprop="worksFor" target="_blank" rel="noopener" >Hoodin</a>, where I currently work. I started as <strong>Front End Developer</strong>, and I've always had a prominent design role. Today I'm <strong itemprop="jobTitle">Product Manager</strong> and <strong itemprop="jobTitle">Lead User Experience&nbsp;Designer</strong>.</p>
+                        <p>Since 2013 I’ve co-funded <a href="https://hoodin.com" itemprop="worksFor" target="_blank" rel="noopener" >Hoodin</a>, where I currently work. I started as <strong>Front End Developer</strong>, and I've always had a prominent design role. Today I'm <strong itemprop="jobTitle">Product Manager</strong> and <strong itemprop="jobTitle">Lead User Experience Designer</strong>.</p>
                         
-                        <p>I’ve also worked on side projects with <a href="https://youcruit.com" rel="noopener" target="_blank">Youcruit</a> and&nbsp;<a href="https://www.kollektiva.se" target="_blank" rel="noopener" >Kollektiva</a>.</p>
+                        <p>I’ve also worked on side projects with <a href="https://youcruit.com" rel="noopener" target="_blank">Youcruit</a> and <a href="https://www.kollektiva.se" target="_blank" rel="noopener" >Kollektiva</a>.</p>
                         
                         <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">I live and work in&nbsp;<span itemprop="addressLocality">Malmö</span>.</p>
                     </div>
@@ -304,10 +308,10 @@
             </section>
         </main>
         <link rel="stylesheet" href="https://use.typekit.net/hhb3mgk.css">
-        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet" href="./assets/styles/main.css">
         <script>
             if (navigator.serviceWorker) {
-                navigator.serviceWorker.register('/serviceworker.js');
+                navigator.serviceWorker.register('./serviceworker.js');
             }
         </script>
         <script>

@@ -1,0 +1,229 @@
+<style>
+    :root {
+        --light: hsl(0, 73%, 97%);
+        --coral: hsl(5, 99%, 71%);
+        --blue: hsl(222, 100%, 32%);
+        --dark: hsl(0, 33%, 7%);
+        --maxWidth: 550px;       
+        --line-height: 1.45;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --coral: hsl(5, 99%, 71%);
+            --blue: hsl(222, 100%, 32%);
+            --dark: hsl(222, 100%, 2%);
+        }
+    }
+
+    * {
+        line-height: var(--line-height);
+        margin-top: 0;
+        margin-bottom: var(--line-height);
+    }
+
+    html,
+    body {
+        font-size: 112.5%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "jaf-facitweb", "facitweb", -apple-system, BlinkMacSystemFont, helvetica, sans-serif;
+        font-feature-settings: normal;
+        background: var(--blue) url(/assets/images/pattern_blue.svg) repeat fixed;
+        color: var(--light);
+        box-sizing: border-box;
+        kerning: auto;
+    }
+
+    article {
+        padding: 0;
+        animation: show 0.75s ease-in-out;
+    }
+
+    article h1 {
+        padding: 20vh 1.3rem 0;
+    }
+
+    article h1 + p {
+        padding: 0 1.3rem 1.3rem;
+    }
+
+    .body {
+        padding: 1.3rem;
+    }
+
+    aside {
+        padding: 2rem 1rem;
+        animation: freeze 0.75s linear;
+        background: var(--coral) url(/assets/images/pattern.svg) repeat fixed;
+        color: var(--blue);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: var(--dark) url(/assets/images/pattern_blue.svg) repeat fixed;
+        }
+
+        aside {
+            background: var(--blue) url(/assets/images/pattern_blue.svg) repeat fixed;
+            color: var(--light);
+        }
+    }
+
+    img {
+        max-width: 100%;
+        animation: show 0.85s ease-in-out;
+        transition: all ease 0.25s;
+            -webkit-clip-path: polygon(0 0, 10% 0, 10% 4%, 20% 4%, 20% 0, 24% 0, 24% 4%, 36% 4%, 36% 0, 100% 0, 100% 80%, 95% 85%, 100% 90%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 10% 0, 10% 4%, 20% 4%, 20% 0, 24% 0, 24% 4%, 36% 4%, 36% 0, 100% 0, 100% 80%, 95% 85%, 100% 90%, 100% 100%, 0% 100%);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        article {
+            animation: none;
+        }
+
+        aside {
+            animation: none;
+        }
+
+        img {
+            animation: none;
+        }
+    }
+
+    @media (min-width: 700px) {
+
+        article h1,
+        article h1 + p {
+            padding-left: 4rem;
+        }
+
+        .body {
+            padding: 2rem 4rem;
+        }
+
+        aside {
+            padding: 2rem 4rem;
+        }
+
+        img {
+            border-radius: 0.2rem;
+            max-width: 35vw;
+            margin: 0.5rem 4rem 0.5rem 1rem;
+            float: right;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: var(--line-height);
+        max-width: var(--maxWidth);
+    }
+
+    h1 + p {
+        font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+        h1 + p {
+            margin-bottom: 3rem;
+        }
+    }
+
+    p + p {
+        text-indent: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        p {
+            font-size: 1.1rem;
+        }
+
+        p + p {
+            text-indent: 0;
+            margin-top: 1.1rem;
+        }
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 2.5rem;
+        letter-spacing: -0.04rem;
+        line-height: calc(var(--line-height) * 1);        
+        margin-top: calc(var(--line-height) * 3);
+        margin-bottom: 0;
+    }
+
+    h1::after {
+        content: ".";
+        color: var(--coral);
+    }
+
+    @media (min-width: 700px) {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h1 + p {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (min-width: 820px) {
+
+        h1 {
+            font-size: 8rem;
+        }
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(200px);
+        }
+
+        30% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes show-slow {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(300px);
+        }
+
+        30% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes freeze {
+        0% {
+            transform: translateY(-200px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>

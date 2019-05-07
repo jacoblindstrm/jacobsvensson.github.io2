@@ -5,6 +5,7 @@ self.addEventListener('install', installEvent => {
             jacobsvenssondesignCache.addAll([
                 '.',
                 '/index.html',
+                '/writing/index.html',
                 '/offline.html',
                 'https://use.typekit.net/hhb3mgk.css',
                 '/assets/styles/main.css',
