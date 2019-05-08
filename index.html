@@ -278,7 +278,41 @@
                     <h1>I'm <span itemprop="givenName">Jacob</span></h1>
                     <p>I believe in design through iterative processes with users and&nbsp;prototypes.</p>
                     
-                    <img itemprop="image" src="/assets/images/profile.jpg" alt="me riding cx" loading="eager"/>
+                    <picture>
+                        <source 
+                            type="image/webp"
+                            srcset="./assets/images/profile/profile@1x.webp 896w,
+                                ./assets/images/profile/profile@2x.webp 1792w"
+                            sizes="(min-width: 700px) 35vw,
+                                (min-width: 1280px) 500px,
+                                100vw"
+                            src="/assets/images/profile/profile@1x.webp" 
+                        />
+                        <source 
+                            type="image/jpg" 
+                            srcset="./assets/images/profile/profile.jpg 375w,
+                                ./assets/images/profile/profile@1x.jpg 896w,
+                                ./assets/images/profile/profile@2x.jpg 1792w,
+                                ./assets/images/profile/profile@3x.jpg 2688w" 
+                            sizes="(min-width: 700px) 35vw,
+                                (min-width: 1280px) 500px,
+                                100vw"
+                            src="/assets/images/profile/profile@1x.jpg" 
+                        />
+                        <img 
+                            itemprop="image"
+                            srcset="./assets/images/profile/profile.jpg 375w,
+                                    ./assets/images/profile/profile@1x.jpg 896w,
+                                    ./assets/images/profile/profile@2x.jpg 1792w,
+                                    ./assets/images/profile/profile@3x.jpg 2688w"
+                            sizes="(min-width: 700px) 35vw,
+                                    (min-width: 1280px) 500px,
+                                    100vw"
+                            src="/assets/images/profile/profile@1x.jpg" 
+                            alt="a photo of myself" 
+                            loading="eager"
+                        />
+                    </picture>
 
                     <div class="body">
                         <p itemprop="description">I’m a father, cyclist and, designer. I like being outdoors, I drink too much coffe, and I love spending time with my
