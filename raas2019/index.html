@@ -98,6 +98,12 @@
     <body>
         <header>
             <h1>Race Across Skane</h1> 
-        </header>              
+        </header>  
+        
+        <script>
+            if (navigator.serviceWorker) {
+                navigator.serviceWorker.register('serviceworker.js');
+            }
+        </script>
     </body>
 </html>
