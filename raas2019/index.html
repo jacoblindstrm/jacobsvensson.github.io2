@@ -42,15 +42,20 @@
                 color: var(--green);
                 box-sizing: border-box;
                 kerning: auto;
+
+                height: 500vh;
             }
 
             header {
                 height: 100vh;
-                width: 80%;
-                margin: auto;
+                width: 100%;
                 display: flex;
                 align-content: center;
                 align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
             }
 
             h1 {
@@ -59,12 +64,14 @@
                 line-height: 0.6;
                 text-align: center;
                 position: relative;
+                font-weight: normal;
             }
 
             h1::after {
                 content: "Race Across Skane";
                 font-family: WHOASpine;
                 font-size: 28vw;
+                font-weight: normal;
                 line-height: 0.6;
                 text-align: center;
 
@@ -82,10 +89,6 @@
             @keyframes fontAni {
                 0 {
                     font-variation-settings: "hrzn" -1000, "vert" 1000, "rota" 45;
-                }
-
-                50% {
-                    font-variation-settings: "hrzn" -1000, "vert" 300, "rota" 0;
                 }
 
                 100% {
