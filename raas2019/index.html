@@ -65,6 +65,8 @@
                 text-align: center;
                 position: relative;
                 font-weight: normal;
+                z-index: 1;
+                animation: fontAniSmall 1s ease infinite alternate both;
             }
 
             h1::after {
@@ -80,19 +82,20 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
+                z-index: -1;
 
-                font-variation-settings: "hrzn" -1000, "vert" 1000, "rota" 45;
-                animation: fontAni 2s ease infinite alternate both;
+                font-variation-settings: "hrzn" -1000, "vert" 100, "rota" 45;
+                animation: fontAni 3.5s ease infinite alternate both;
                 transform: translateZ(0);
             }
 
             @keyframes fontAni {
                 0 {
-                    font-variation-settings: "hrzn" -1000, "vert" 1000, "rota" 45;
+                    font-variation-settings: "hrzn" -1000, "vert" 500, "rota" 45;
                 }
 
                 100% {
-                    font-variation-settings: "hrzn" 1000, "vert" -1000, "rota" -45;
+                    font-variation-settings: "hrzn" 1000, "vert" -500, "rota" -45;
                 }
             }
 
@@ -102,7 +105,7 @@
         <header>
             <h1>Race Across Skane</h1> 
         </header>  
-        
+
         <script>
             if (navigator.serviceWorker) {
                 navigator.serviceWorker.register('serviceworker.js');
