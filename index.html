@@ -84,25 +84,49 @@
             article {
                 padding: 0;
                 animation: show 0.75s ease-in-out;
+                display: grid;
+                grid-template: 14rem repeat(4, min-content) / 10rem 1fr;
             }
 
             article h1 {
-                padding: 20vh 1.3rem 0;
+                padding: 0 1.3rem 0;
+                grid-column: 2 / span 2;
+                grid-row: 2;
+                align-self: end;
             }
 
             article h1 + p {
                 padding: 0 1.3rem 1.3rem;
+                grid-column: 1 / -1;
+                grid-row: 3;
+            }
+
+            .bio article img {
+                padding-left: 0.5rem;
+                box-sizing: border-box;
+            }
+
+            article picture {
+                grid-column: 1 / 1;
+                grid-row: 2 / 2;
+                align-self: end;
             }
 
             .body {
                 padding: 1.3rem;
+                grid-column: 1 / -1;
+                grid-row: 4;
             }
 
             aside {
-                padding: 2rem 1rem;
+                padding: 8rem 1rem 4rem;
                 animation: freeze 0.75s linear;
                 background: var(--coral) url(/assets/images/pattern.svg) repeat fixed;
                 color: var(--blue);
+                grid-column: 1 / -1;
+                grid-row: 5;
+                    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
             }
 
             @media (prefers-color-scheme: dark) {
@@ -150,19 +174,17 @@
                 }
 
                 aside {
-                    padding: 2rem 4rem;
+                    padding: 8rem 4rem 4rem;
                 }
 
                 img {
                     border-radius: 0.2rem;
                     max-width: 35vw;
-                    margin: 0.5rem 4rem 0.5rem 1rem;
-                    float: right;
                 }
             }
 
             p {
-                font-size: 1rem;
+                font-size: 1.1rem;
                 font-weight: 400;
                 line-height: var(--line-height);
                 max-width: var(--maxWidth);
@@ -170,6 +192,7 @@
 
             h1 + p {
                 font-weight: 700;
+                font-size: 1.3rem;
             }
 
             @media (min-width: 768px) {
@@ -208,18 +231,39 @@
             }
 
             @media (min-width: 700px) {
-                h1 {
-                    font-size: 5rem;
+                article h1 {
+                    font-size: 4rem;
                 }
-        
+
                 h1 + p {
                     font-size: 1.4rem;
                 }
             }
 
             @media (min-width: 820px) {
-        
-                h1 {
+                article h1 {
+                    grid-column: 1 / -1;
+                    grid-row: 1;
+                }
+                
+                article picture {
+                    grid-column: 3 / 3;
+                    grid-row: 3 / 4;
+                    padding-right: 4rem;
+                    align-self: start;
+                }
+
+                article h1 + p {
+                    grid-row: 2;
+                }
+
+                article .body {
+                    grid-row: 3;
+                }
+            }
+
+            @media (min-width: 1280px) { 
+                article h1 {
                     font-size: 8rem;
                 }
             }
@@ -272,8 +316,27 @@
         </style>
     </head>
     <body>
+        <!-- <nav>
+            <h1>
+                <a href="https://jacobsvensson.design" rel="prefetch">
+                <svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Desktop-HD" transform="translate(-120.000000, -72.000000)" fill="#FDF2F2">
+                        <path d="M134.250366,72 L134.749634,72 L149,85.7791527 L149,100 L120,100 L120,85.7791527 L134.250366,72 Z" id="Combined-Shape"></path>
+                    </g>
+                </svg>
+                jacobsvensson.design</a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" class="current">Writing</a>
+                </li>
+                <li>
+                    <a href="./" rel="prefetch">About</a>
+                </li>
+            </ul>
+        </nav> -->
         <main>
-            <section id="about">
+            <section id="about" class="bio">
                 <article itemscope itemtype="http://schema.org/Person">
                     <h1>I'm <span itemprop="givenName">Jacob</span></h1>
                     <p>I believe in design through iterative processes with users and&nbsp;prototypes.</p>
