@@ -1,6 +1,5 @@
 # jacobsvensson.com
 
 Jacob Svensson
-- www: https://jacobsvensson.com/
-- Twitter: @recidiv
+- www: https://jacobsvensson.design
 - Location: Malmö, Sweden
