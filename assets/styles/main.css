@@ -131,13 +131,6 @@ aside a:visited {
     color: var(--blue);
 }
 
-@media (prefers-color-scheme: dark) {
-    aside a,
-    aside a:visited {
-        color: var(--coral);
-    }
-}
-
 ul.external-links {
     list-style: none;
     padding: 0;
